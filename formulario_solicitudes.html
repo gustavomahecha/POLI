@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARMESY - Formulario Solicitudes</title>
+  <link rel="stylesheet" href="formulario_solicitudes.css">
+  <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="encabezado">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Globe_icon.svg/2000px-Globe_icon.svg.png" alt="Logo CARMESY">
+      <strong>CARMESY</strong>
+    </div>
+    <div class="titulo-pagina">
+      <strong>FORMULARIO SOLICITUDES</strong>
+    </div>
+  </header>
+<!-- Botón para volver al Home -->
+<div class="volver-wrapper">
+    <a href="radicar_solicitudes.html" class="boton-volver">← Volver</a>
+  </div>
+  
+  
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+    <form class="formulario">
+      <div class="campo-formulario">
+        <label for="nombres">NOMBRES</label>
+        <input type="text" id="nombres" name="nombres">
+      </div>
+
+      <div class="campo-formulario">
+        <label for="documento">DOCUMENTO</label>
+        <input type="text" id="documento" name="documento">
+      </div>
+
+      <div class="campo-formulario">
+        <label for="tipo">TIPO DE SOLICITUD</label>
+        <select id="tipo" name="tipo">
+          <option value="">Seleccione una opción</option>
+          <option value="peticion">Petición</option>
+          <option value="queja">Queja</option>
+          <option value="reclamo">Reclamo</option>
+          <option value="sugerencia">Sugerencia</option>
+        </select>
+      </div>
+
+      <div class="campo-formulario">
+        <label for="descripcion">DESCRIPCIÓN SOLICITUD</label>
+        <textarea id="descripcion" name="descripcion"></textarea>
+      </div>
+
+      <!-- Botón de envío -->
+      <div class="contenedor-boton">
+        <button type="submit" class="boton-enviar">Enviar Solicitud</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    Tel (+57) 601 0000000 - Dirección - www.Carmesy.com - @carmesy
+  </footer>
+
+</body>
+</html>
