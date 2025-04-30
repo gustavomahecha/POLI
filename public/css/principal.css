@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.encabezado {
+  background-color: #c00;
+  color: white;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.encabezado__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.encabezado__logo img {
+  width: 28px;
+  height: 28px;
+}
+
+.marca {
+  letter-spacing: 0.5px;
+}
+
+.encabezado__titulo {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  flex: 1;
+  text-align: center;
+  margin-right: auto;
+}
+
+.encabezado__acciones {
+  display: flex;
+  gap: 8px;
+}
+
+/* ============ BOTONES HEADER ============ */
+.btn-header {
+  background-color: #fff;
+  color: rgb(219, 130, 130);
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-header:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.04);
+}
+
+.btn-header.secondary {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-header.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ============ RESPONSIVO ============ */
+@media (max-width: 768px) {
+  .encabezado {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 16px;
+  }
+
+  .encabezado__titulo {
+    text-align: center;
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .encabezado__acciones {
+    justify-content: center;
+    width: 100%;
+    margin-top: 6px;
+  }
+}
+
+
+.pie-pagina {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  padding: 15px 10px;
+  background-color: #f0f0f0;
+  margin-top: auto; /* 🔥 Esto lo empuja hacia abajo */
+}
+
+/* ============ RESPONSIVO ============ */
+@media (max-width: 768px) {
+  .encabezado {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 16px;
+  }
+
+  .encabezado__titulo {
+    text-align: center;
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .encabezado__acciones {
+    justify-content: center;
+    width: 100%;
+    margin-top: 6px;
+  }
+}
